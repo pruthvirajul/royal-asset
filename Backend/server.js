@@ -11,9 +11,9 @@ app.use(express.json());
 // PostgreSQL connection configuration
 const pool = new Pool({
     user: 'postgres',
-    host: 'localhost',
+    host: 'postgres',
     database: 'asset_management',
-    password: 'root',
+    password: 'admin321',
     port: 5432,
 });
 
@@ -187,5 +187,5 @@ app.get('/api/stats', async (req, res) => {
 
 // Start server
 app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
+    console.log(`Server running at http://56.228.21.217:${port}`);
 });
