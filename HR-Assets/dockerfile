@@ -1,0 +1,11 @@
+# Use Nginx or a lightweight Node.js setup for frontend
+FROM nginx:latest
+
+# Copy static files to Nginx directory
+COPY . /usr/share/nginx/html
+
+# Expose the default HTTP port
+EXPOSE 80
+
+# Start Nginx
+CMD ["nginx", "-g", "daemon off;"]
