@@ -19,7 +19,7 @@ services:
     build: ./Backend
     container_name: asset_backend
     ports:
-      - "5000:5000"
+      - "3109:3109"
     depends_on:
       - postgres
 
