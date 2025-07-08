@@ -19,7 +19,7 @@ services:
     build: ./Backend
     container_name: asset_backend
     ports:
-      - "3109:3109"
+      - "3212:3212"
     depends_on:
       - postgres
 
@@ -27,7 +27,7 @@ services:
     build: ./Employee-Assets
     container_name: employee_assets_ui
     ports:
-      - "7654:80"
+      - "8027:80"
     depends_on:
       - backend
 
@@ -35,7 +35,7 @@ services:
     build: ./HR-Assets
     container_name: hr_assets_ui
     ports:
-      - "7655:80"
+      - "8028:80"
     depends_on:
       - backend
 
